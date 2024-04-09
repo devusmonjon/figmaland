@@ -1,0 +1,143 @@
+/* ********
+
+    Author: Usmonjon Hasanov
+    Telegram: @DevMERN
+    Instagram: @usmonjon_hasanov
+    Facebook: @usmonjonh
+    Twitter (X): @usmonjon_hasanov
+    LinkedIn: /in/usmonjon_hasanov
+    WhatsApp: +998-(90)-193-1320
+    Tel: +998-(90)-193-1320
+    
+    ******** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Graphik';
+}
+
+/* ************ install fonts ************ */
+@font-face {
+    font-family: 'Graphik';
+    src: url(./fonts/GraphikRegular.otf) format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url(./fonts/GraphikMedium.otf) format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url(./fonts/GraphikBold.otf) format('opentype');
+    font-weight: 600;
+}
+
+/* ******** root ******** */
+:root {
+    --primary-color: #4452FE;
+    --dark: #181818;
+    --light: #ffffff;
+}
+
+/* html and body */
+body {
+    background: var(--dark);
+}
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+/* ******** focus ******** */
+a:focus,
+button:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* ******** BUTTONS STYLE ******** */
+.btn {
+    text-decoration: none;
+    background: inherit;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: var(--light);
+}
+
+.btn span {
+    padding: 10px;
+}
+
+/* ******** btn outline ******** */
+.btn-outline {
+    border: 1px solid var(--light);
+    transition: all .3s ease;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+/* ******** NAVBAR STYLING START ******** */
+.navbar {
+    background: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.navbar .container .logo img {
+    box-sizing: content-box;
+    padding: 10px;
+    width: 186px;
+}
+
+.navbar .container .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.navbar .container .nav-list .nav-item .nav-link {
+    padding: 10px;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+
+.navbar .container .nav-list .nav-item .nav-link:hover,
+.navbar .container .nav-list .nav-item .nav-link:focus {
+    color: var(--primary-color);
+}
+
+.navbar .container .btn {
+    padding: 10px 26px;
+    outline-offset: 2px;
+}
+
+/* ******** NAVBAR END ******** */
