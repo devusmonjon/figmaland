@@ -2,6 +2,6 @@
 
 <hr>
 
-[Demo project](https://figmaland.vercel.app)
+[Demo project](https://figmaland-livid.vercel.app)
 
 ‼️ Currently only completed navbar section ‼️
